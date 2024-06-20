@@ -10,23 +10,22 @@ int cross_chakravyuh(vector<int> v,int a,int b,int p){
     int skip_battle = a;
     for (int i = 0; i < 11; i++)
     {
-        // k3 and k7 regerate power and attack from behind the case
+        // k3 and k7 regenerate power and attack from behind the case
         if (i == 3 || i == 7)
         {
             v[i] += (v[i - 1] / 2);
         }
-        // If Abhimanyu has less power than enemy
+        // If Abhimanyu has less power than the enemy
         if (current_power< v[i])
         {
             // If Abhimanyu can recharge
             if (current_power!= p && p >= v[i] && recharge > 0)
             {
-                
                 current_power= p;
                 current_power-= v[I];
                 --recharge;
             }
-            // if abhimanyu can skip
+            //If Abhimanyu can skip
             else if (skip_battle > 0)
             {
                 --skip_battle;
@@ -52,6 +51,6 @@ int main() {
     cout << (cross_chakravyuh(v1,a1, b1,p1)==1 ? "Yes" : "No") << endl;
     vector<int> v2 = {55, 70, 30, 20, 50, 60, 30, 80, 90, 40, 90};
     int p2 = 60, a2 = 2, b2 = 3;
-    cout << (cross_chakravyuh(v2,a2,b2,p2) ? "Yes" : "No") << endl;
+    cout << (cross_chakravyuh(v2,a2,b2,p2)==1 ? "Yes" : "No") << endl;
     return 0;
 }

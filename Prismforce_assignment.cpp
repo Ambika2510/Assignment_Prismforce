@@ -21,14 +21,15 @@ int cross_chakravyuh(vector<int> v,int a,int b,int p){
             // If Abhimanyu can recharge
             if (current_power!= p && p >= v[i] && recharge > 0)
             {
-                recharge--;
+                
                 current_power= p;
-                current_power-= v[i];
+                current_power-= v[I];
+                --recharge;
             }
             // if abhimanyu can skip
             else if (skip_battle > 0)
             {
-                skip_battle--;
+                --skip_battle;
             }
             // If Abhimanyu cannot defeat
             else

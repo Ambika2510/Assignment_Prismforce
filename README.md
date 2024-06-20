@@ -26,7 +26,7 @@ Solution:-
 
 • p: Initial power of Abhimanyu.
 
-• The return type of this function is of 'int' type, if Abhimanyu crosses the chakravyuh, it returns 1 otherwise it returns 0;
+• The return type of this function is of 'int' type, if Abhimanyu crosses the chakravyuh, it returns 1 otherwise it returns 0.
 
 2. Base Case:
 

@@ -14,7 +14,7 @@ The algorithm finds if Abhimanyu can cross the Chakravyuh keeping in mind the fo
 
 Solution:-
 
-1. Function solve:
+1. Function cross_chakravyuh:
 
 • This function takes four parameters:
 
@@ -25,6 +25,8 @@ Solution:-
 • b: Number of times Abhimanyu can recharge his power.
 
 • p: Initial power of Abhimanyu.
+
+• The return type of this function is of 'int' type, if Abhimanyu crosses the chakravyuh, it returns 1 otherwise it returns 0;
 
 2. Base Case:
 
@@ -52,7 +54,7 @@ Solution:-
 
 • Otherwise, if he has remaining skips (skip_battle > 0), he skips the battle.
 
-• If neither condition is met, Abhimanyu cannot proceed, and the function return 0(false).
+• If neither condition is met, Abhimanyu cannot proceed, and the function returns 0(false).
 
 6. Updating Current Power:
 
